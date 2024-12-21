@@ -1,1 +1,37 @@
-env/
+# Django-specific files
+*.pyc
+*.pyo
+__pycache__/
+
+# Compiled JavaScript/CSS
+.js-cache/
+build/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Local development settings
+local_settings.py
+
+# Environment-specific files
+env/ 
+
+# Static files (if not collected)
+static/
+
+# Media files
+media/
+
+# Database files
+db.sqlite3 
+
+# Logs
+*.log
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
