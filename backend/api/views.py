@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Note
 
 
-class NoteListCreate(generics.ListCreateAPIView):
+class NoteListCreateView(generics.ListCreateAPIView):
     serializer_class = NoteSerializer
     permission_classes = [IsAuthenticated]
 
@@ -21,7 +21,7 @@ class NoteListCreate(generics.ListCreateAPIView):
             print(serializer.errors)
 
 
-class NoteDelete(generics.DestroyAPIView):
+class NoteDeleteView(generics.DestroyAPIView):
     serializer_class = NoteSerializer
     permission_classes = [IsAuthenticated]
 
