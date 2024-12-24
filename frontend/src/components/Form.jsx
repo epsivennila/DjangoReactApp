@@ -32,7 +32,7 @@ function Form({route,method}){
         }
 
     }
-    return <form onSubmit={handleSubmit} className="form-container">
+    return (<form onSubmit={handleSubmit} className="form-container">
         <h1> {name} </h1>
         <input 
             type = "text" 
@@ -49,8 +49,8 @@ function Form({route,method}){
             placeholder="Password"
         />
         <button type="submit" className="form-button">{name}</button>
-    </form>
-    
+        </form>
+    )
 
 }
 export default Form
